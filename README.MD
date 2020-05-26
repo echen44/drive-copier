@@ -1,5 +1,5 @@
 # Drive Copier
-Web app to simplify making copies of public Google Drive files and bypass download quotas.\
+Web app to simplify making copies of public Google Drive files and bypass download quotas.
 
 [Try it at drivecopier.xyz](https://drivecopier.xyz)
 
