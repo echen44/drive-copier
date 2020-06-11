@@ -26,6 +26,7 @@ SUB = 'sub'
 app = Flask(__name__, static_url_path='/static')
 app.config.from_object(Config)
 app.secret_key = app.config['SECRET_KEY']
+app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {"pool_pre_ping": True}
 client = WebApplicationClient(app.config['CLIENT_ID'])
 db.init_app(app)
 migrate = Migrate(app, db)
