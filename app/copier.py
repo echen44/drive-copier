@@ -67,10 +67,13 @@ class Copier:
 
         get_batch = self.service.new_batch_http_request(callback=self.__get_callback)
         for file_id in file_ids:
-            get_batch.add(
-                files_api.get(fileId=file_id),
-                request_id=file_id
-            )
+            try:
+                get_batch.add(
+                    files_api.get(fileId=file_id),
+                    request_id=file_id
+                )
+            except:
+                pass
         get_batch.execute()
 
         copy_batch = self.service.new_batch_http_request(callback=self.__copy_callback)

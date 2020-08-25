@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Drive Copier</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="/static/css/style.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <title>Drive Copier</title>
-    <meta charset="utf-8"/>
+    <!-- gapi -->
+    <script src="https://apis.google.com/js/api.js" 
+    ></script>
+    <!-- react -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h3>Drive Copier</h3>
-      <a class="waves-effect waves-light btn-large" id="authorize_button" onclick="">Sign in</a>
-
+    <div id="root" class="container">
       <script src="/static/js/login.js"></script>
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </div>
   </body>
 </html>

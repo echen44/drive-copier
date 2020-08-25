@@ -1,80 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Drive Copier</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="/static/css/style.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <title>Drive Copier</title>
-    <meta charset="utf-8" />
+    <!-- gapi -->
+    <script src="https://apis.google.com/js/api.js" 
+    ></script>
+    <!-- react -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h3>Drive Copier</h3>
-      <button class="waves-effect waves-light btn" id="signout_button">Sign out</button>
-      <div id="links">
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea id="links-box" class="materialize-textarea"></textarea>
-            <label for="links-box">Enter Google Drive links</label>
-          </div>
-        </div>
-      </div>
-      <div class="switch">
-        <label>
-          Make copies public? (Only to those with the link)
-          <input id="public" type="checkbox">
-          <span class="lever"></span>
-        </label>
-      </div>
-      <br>
-      <div id="folder-select">
-        <button class="btn disabled" id="picker_button">Pick a folder</button>
-        <span id="folder_selected"></span>
-      </div>
-      <br>
-      <button id="submit_button" class="btn disabled" type="submit">Submit</button>
-      <br>
-      <div id="spinner" class="preloader-wrapper large active center2" style="display: none;">
-        <div class="spinner-layer spinner-green-only">
-          <div class="circle-clipper left">
-            <div class="circle"></div>
-          </div><div class="gap-patch">
-            <div class="circle"></div>
-          </div><div class="circle-clipper right">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <div id="results" style="display: none">
-        <a id="copy_button" class="right nwaves-effect waves-light btn">Copy links to clipboard</a>
-        <table id="results_table">
-          <thead>
-            <tr>
-                <th>File Name</th>
-                <th>Copy link/Error</th>
-            </tr>
-          </thead>
-          <tbody id="result_columns">
-          </tbody>
-        </table>
-      </div>
-
-      <pre id="content" style="white-space: pre-wrap;"></pre>
-
+    <div id="root" class="container">
+      <script src="/static/js/google-picker.js"></script>
       <script src="/static/js/drive.js"></script>
-<!--      <script src="/static/js/listeners.js"></script>-->
-
-      <script async defer src="https://apis.google.com/js/api.js"
-        onload="this.onload=function(){};handleClientLoad()"
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-      </script>
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-      <!-- Compiled and minified JavaScript -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </div>
   </body>
 </html>
