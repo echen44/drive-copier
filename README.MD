@@ -58,9 +58,9 @@ Using Drive Copier is simple.
 
 ![Sign in](./.readme/authorize.png)
 
-#### 2. Paste your Google Drive links to copy into the textarea. Check if you want your copies to be public.
+#### 2. Paste your Google Drive links to copy into the textarea. Check if you want your copies to be public (for download managers like Jdownloader).
 
-![Sign in](./.readme/paste.png)
+![Links](./.readme/paste.png)
 
 #### 3. Picker a folder.
 
