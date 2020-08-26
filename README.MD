@@ -1,5 +1,6 @@
 # Drive Copier
-Web app to simplify making copies of public Google Drive files and bypass download quotas.
+Web app to simplify making copies of public Google Drive files and bypass download quotas.\
+Built with React, Flask and Docker.
 
 [Try it at drivecopier.xyz](https://drivecopier.xyz)
 
@@ -32,7 +33,7 @@ You are going to need the following client credentials to get access to authoriz
 - Client Secret
 
 You can get them from the [Google API Console](https://console.developers.google.com). If running locally, your\
-Authorized JavaScript origins should be include
+Authorized JavaScript origins should include
 ```
 http://localhost
 ```
