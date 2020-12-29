@@ -91,8 +91,8 @@ class ResultColumn extends React.Component {
           {this.props.item.name}
         </td>
         <td>
-          {this.props.item.copy_id
-            ? <a target="_blank" href={this.props.item.link}>{this.props.item.link}</a>
+          {this.props.item.id
+            ? <a target="_blank" href={this.props.item.webViewLink}>{this.props.item.webViewLink}</a>
             : this.props.item.error
           }
         </td>
@@ -272,8 +272,8 @@ class Copier extends React.Component {
     let copyThese = [];
 
     this.state.results.forEach((item) => {
-      if (item.copy_id) {
-        copyThese.push(item.link); 
+      if (item.id) {
+        copyThese.push(item.webViewLink);
       }
     });
 

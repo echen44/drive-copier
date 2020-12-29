@@ -1,5 +1,6 @@
 # Drive Copier
 Web app to simplify making copies of public Google Drive files and bypass download quotas.\
+Also copies folders while preserving folder structure.\
 Built with React, Flask and Docker.
 
 [Try it at drivecopier.xyz](https://drivecopier.xyz)
@@ -62,7 +63,7 @@ Using Drive Copier is simple.
 
 ![Links](./.readme/paste.png)
 
-#### 3. Picker a folder.
+#### 3. Pick a destination folder.
 
 ![Google Picker](./.readme/picker.png)
 

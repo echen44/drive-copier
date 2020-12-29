@@ -235,10 +235,10 @@ var ResultColumn = function (_React$Component8) {
         React.createElement(
           "td",
           null,
-          this.props.item.copy_id ? React.createElement(
+          this.props.item.id ? React.createElement(
             "a",
-            { target: "_blank", href: this.props.item.link },
-            this.props.item.link
+            { target: "_blank", href: this.props.item.webViewLink },
+            this.props.item.webViewLink
           ) : this.props.item.error
         )
       );
@@ -509,8 +509,8 @@ var Copier = function (_React$Component13) {
       var copyThese = [];
 
       this.state.results.forEach(function (item) {
-        if (item.copy_id) {
-          copyThese.push(item.link);
+        if (item.id) {
+          copyThese.push(item.webViewLink);
         }
       });
 
